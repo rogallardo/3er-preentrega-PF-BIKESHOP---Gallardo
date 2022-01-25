@@ -32,6 +32,7 @@
         margin-top: 20px;
         padding-left: 50px;
         padding-right: 50px;
+        gap:20px;
         grid-template-areas:
             'item-prod1'
             'item-prod2'
@@ -61,9 +62,15 @@
         min-width: 300px;
         font-size: 60px;
         text-decoration: none;
+        box-shadow: 5px 5px 5px rgb(177, 177, 177);
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        padding-bottom: 10px;
 
 
     }
+
 
     .item-prod1 {
         background-image: url(../img/prod2.jpg);
@@ -78,21 +85,26 @@
         font-size: 20px;
         font-family: 'Oswald', sans-serif;
         color: white;
-        border-color: white;
+        border-color: solid 1px black;
         background-color: rgb(54, 54, 54);
-        position: absolute;
         transition: 0.5s;
-        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
 
 
+
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: solid 1px black;
+            color: rgb(0, 0, 0);
+        }
 
     }
-
-    .btn-prod:hover {
-        background-color: rgb(108, 175, 153);
-    }
-
-
 
 
     .item-prod2 {
@@ -250,8 +262,8 @@
         &:hover {
             background-color: rgb(255, 255, 255);
             text-decoration: none;
-            border: solid 2px black;
-            color:rgb(0, 0, 0);
+            border: solid 1px black;
+            color: rgb(0, 0, 0);
         }
     }
 
