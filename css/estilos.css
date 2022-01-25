@@ -894,9 +894,10 @@ a {
   }
 
   .carousel-inner {
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     max-width: 100vw;
+    margin-top: 15px;
   }
 
   .item-prod {
@@ -1094,7 +1095,7 @@ a {
   }
 
   .carousel-inner {
-    height: 540px;
+    height: 500px;
     overflow: hidden;
     max-width: 100vw;
   }
