@@ -11,12 +11,12 @@
     display: flex;
     flex-direction: $flexdirec;
     justify-content: $justifyc;
-    width: 100%;
+    width: 100vw;
 
 }
 
 .footer {
-    @include footerp(column-reverse, space-between);
+    @include footerp(column-reverse, center);
 
     .footer-text {
         border-bottom: solid 1px grey;
@@ -53,19 +53,22 @@
     }
 
     .sitemap-container {
-        @include footerp(column, space-between);
-        padding: 5px;
+        @include footerp(column, space-around);
         height: fit-content;
+        max-width: 90%;
+        margin: auto;
 
         .secciones-container {
             height: fit-content;
-            width: 100%;
+            max-width: 100%;
             height: 20px;
             text-decoration: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-content: center;
             border-top: solid 1px grey;
             border-bottom: solid 1px grey;
+            background: rgb(63, 63, 63);
 
             a {
                 color: white;

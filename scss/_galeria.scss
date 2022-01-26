@@ -1,11 +1,11 @@
-/* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE:  200-760px ++++++++++++++++++++++++++++++ */
-/* --------------------------------------------GALERIA-------------------------------------------- */
-@media only screen and (min-width: 200px) and (max-width: 760px) {
+/* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE:  200-767px ++++++++++++++++++++++++++++++ */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
 
 
     .grid-container-galeria {
         background-color: white;
         width: 100%;
+        min-height: 100vh;
         display: grid;
         margin-top: 0px;
         grid-gap: 20px;
@@ -120,13 +120,13 @@
     }
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE: 761-1380px ++++++++++++++++++++++++++++++ */
-/* -------------------------------------------GALERIA----------------------------------------- */
-@media only screen and (min-width: 761px) and (max-width: 1380px) {
+/* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE: +768x ++++++++++++++++++++++++++++++ */
+@media only screen and (min-width: 768px) {
 
     .grid-container-galeria {
         background-color: white;
         width: 100%;
+        min-height: 100vh;
         margin: auto;
         display: grid;
         grid-gap: 20px;
@@ -198,9 +198,9 @@
 
     .item4 {
         background-image: url(../img/item4.jpg);
-        background-size: cover;
+        background-size:cover;
         grid-area: item4;
-        background-position-y: 70%;
+        background-position-y: 60%;
     }
 
     .item5 {
