@@ -101,7 +101,7 @@ a {
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .destacado div {
   width: 100vw;
@@ -361,7 +361,7 @@ a {
     display: flex;
     justify-content: center;
     height: 100vh;
-    width: 98.75vw;
+    width: 100%;
   }
   .destacado div {
     width: 98.75vw;
@@ -523,31 +523,38 @@ a {
   .contenedor-nosotros {
     background-image: url(../img/cobblestones-g0c89a1c72_1920.jpg);
     background-size: cover;
-    width: 100vw;
+    background-attachment: fixed;
     height: 100%;
+    width: 100%;
     display: grid;
-    margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header			header   	header" "cards-container		cards-container 	cards-container" "cards-container		cards-container 	cards-container" "footer	 		footer 		footer";
+    grid-template-areas: "header			header   	header" "main-nosotros	main-nosotros	main-nosotros" "main-nosotros	main-nosotros	main-nosotros" "footer	 		footer 		footer";
+  }
+
+  .main-nosotros {
+    display: flex;
+    height: 100%;
+    grid-area: main-nosotros;
   }
 
   .cards-container {
     display: flex;
     flex-direction: column;
-    min-width: 100vw;
-    grid-area: cards-container;
+    width: 100%;
+    height: fit-content;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .card-1 {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    width: 280px;
+    width: 270px;
     box-shadow: 5px 10px 10px #a5a5a5;
+    margin-bottom: 50px;
   }
   .card-1 .img-card-1 {
     height: 300px;
@@ -562,7 +569,7 @@ a {
     padding: 5%;
   }
   .card-1 .text-card-1 h4 {
-    font-size: 34px;
+    font-size: 28px;
     text-align: center;
   }
   .card-1 .text-card-1 p {
@@ -576,9 +583,7 @@ a {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 280px;
+    width: 270px;
     box-shadow: 5px 10px 10px #646464;
   }
   .card-2 .img-card-2 {
@@ -594,7 +599,7 @@ a {
     padding: 5%;
   }
   .card-2 .text-card-2 h4 {
-    font-size: 34px;
+    font-size: 28px;
     text-align: center;
   }
   .card-2 .text-card-2 p {
@@ -610,11 +615,17 @@ a {
     background-image: url(../img/cobblestones-g0c89a1c72_1920.jpg);
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header			header   	header" "cards-container		cards-container 	cards-container" "footer	 		footer 		footer";
+  }
+
+  .main-nosotros {
+    display: flex;
+    width: 97vw;
+    justify-content: center;
   }
 
   .cards-container {
@@ -695,11 +706,17 @@ a {
     background-image: url(../img/cobblestones-g0c89a1c72_1920.jpg);
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header			header   	header" "cards-container		cards-container 	cards-container" "footer	 		footer 		footer";
+  }
+
+  .main-nosotros {
+    display: flex;
+    width: 97vw;
+    justify-content: center;
   }
 
   .cards-container {
@@ -707,7 +724,7 @@ a {
     flex-direction: row;
     width: 100vw;
     grid-area: cards-container;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .card-1 {
@@ -1420,7 +1437,7 @@ a {
   .grid-container-productos {
     background-color: white;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -1581,13 +1598,13 @@ a {
   background: #3f3f3f;
   font-size: 12px;
   grid-area: footer;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 .footer .footer-text {
   border-bottom: solid 1px grey;
@@ -1615,20 +1632,20 @@ a {
   background: #3f3f3f;
   font-size: 12px;
   grid-area: footer;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: space-between;
+  width: 100%;
   height: fit-content;
   max-width: 90%;
   margin: auto;
 }
 .footer .sitemap-container .secciones-container {
   height: fit-content;
-  max-width: 100%;
+  max-width: 90%;
   height: 20px;
   text-decoration: none;
   display: flex;
