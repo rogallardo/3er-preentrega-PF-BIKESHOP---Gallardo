@@ -95,7 +95,7 @@ a {
 /* ---------- Articulo Destacado ----------*/
 .destacado {
   grid-area: destacado;
-  background-image: url(/img/bicidestacada.jpeg);
+  background-image: url(/img/bicidestacada2.jpg);
   background-size: cover;
   background-position-y: 20%;
   display: flex;
@@ -354,7 +354,7 @@ a {
   /* ---------- Articulo Destacado ----------*/
   .destacado {
     grid-area: destacado;
-    background-image: url(/img/bicidestacada.jpeg);
+    background-image: url(/img/bicidestacada2.jpg);
     background-size: cover;
     background-position-y: 20%;
     background-position-x: 80%;
