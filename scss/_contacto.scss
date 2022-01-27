@@ -23,6 +23,11 @@
         grid-area: form-container;
         color:blanchedalmond;
     }
+    .form-input{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
 
     .titulo-contacto {
         margin-top: 10px;
@@ -32,16 +37,35 @@
         justify-content: center;
         font-size: 30px;
     }
+    .subtitulo-contacto{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     .selector-sexo{
         z-index: 2;
-        margin-bottom: 20px;
     }
 
     .titulo-termycond {
         margin-top: 30px;
         margin-bottom: 20px;
         height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
+    }
+    .texto-termycond{
+        justify-content: center;
+        text-align: justify;
+        margin: 30px;
+
+    }
+    .checkaceptoterm{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 40px;
     }
     .boton-enviar {
         margin-bottom: 20px;
