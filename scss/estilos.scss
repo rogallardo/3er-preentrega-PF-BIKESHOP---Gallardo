@@ -108,7 +108,7 @@ a {
 /* ---------- Articulo Destacado ----------*/
 .destacado {
 	grid-area: destacado;
-	background-image: url(/img/bicidestacada2.jpg);
+	background-image: url(../img/bicidestacada2.jpg);
 	background-size: cover;
 	background-position-y: 20%;
 	display: flex;
@@ -436,7 +436,7 @@ $paleta_sidebar: ('color1': black,
 	/* ---------- Articulo Destacado ----------*/
 .destacado {
 	grid-area: destacado;
-	background-image: url(/img/bicidestacada2.jpg);
+	background-image: url(../img/bicidestacada2.jpg);
 	background-size: cover;
 	background-position-y: 20%;
 	background-position-x: 80%;
