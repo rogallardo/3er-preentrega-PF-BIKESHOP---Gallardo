@@ -95,7 +95,7 @@ a {
 /* ---------- Articulo Destacado ----------*/
 .destacado {
   grid-area: destacado;
-  background-image: url(/img/instagram.png);
+  background-image: url(/img/bicidestacada2.jpg);
   background-size: cover;
   background-position-y: 20%;
   display: flex;
@@ -356,7 +356,7 @@ a {
     grid-area: destacado;
     background-image: url(/img/bicidestacada2.jpg);
     background-size: cover;
-    background-position-y: 10%;
+    background-position-y: 20%;
     background-position-x: 80%;
     display: flex;
     justify-content: center;
@@ -364,7 +364,7 @@ a {
     width: 100%;
   }
   .destacado div {
-    width: 100%;
+    width: 98.75vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
