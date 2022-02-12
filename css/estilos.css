@@ -1727,7 +1727,7 @@ a {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 10%;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -1735,7 +1735,7 @@ a {
   }
   .categorias-container .item-cat {
     height: 300px;
-    width: 200px;
+    width: 180px;
     box-shadow: 5px 0px 10px #9b9b9b;
     justify-content: center;
     align-items: center;
@@ -1746,6 +1746,17 @@ a {
   }
   .categorias-container .item-cat:hover {
     transform: scale(1);
+  }
+  .categorias-container .item-cat-titulo {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
   }
 }
 /* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE:  761-1023px ++++++++++++++++++++++++++++++ */
