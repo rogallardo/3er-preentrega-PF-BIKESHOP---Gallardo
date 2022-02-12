@@ -1248,7 +1248,7 @@ a {
   grid-template-areas: "cat-MTB cat-repuestos cat-accesorios cat-indumentaria";
 }
 .categorias-container .item-cat {
-  height: 400px;
+  height: 450px;
   width: 300px;
   box-shadow: 5px 0px 10px #9b9b9b;
   justify-content: center;
@@ -1256,6 +1256,7 @@ a {
   display: flex;
   transition: 0.2s;
   backdrop-filter: brightness(40%);
+  background-size: cover;
 }
 .categorias-container .item-cat .bright {
   backdrop-filter: brightness(40%);
@@ -1727,6 +1728,7 @@ a {
     display: grid;
     justify-content: center;
     align-items: center;
+    padding: 8%;
     padding: 10%;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -1734,8 +1736,8 @@ a {
     grid-template-areas: "cat-MTB cat-repuestos" "cat-accesorios cat-indumentaria";
   }
   .categorias-container .item-cat {
-    height: 300px;
-    width: 180px;
+    height: 100%;
+    width: 100%;
     box-shadow: 5px 0px 10px #9b9b9b;
     justify-content: center;
     align-items: center;
@@ -1748,7 +1750,7 @@ a {
     transform: scale(1);
   }
   .categorias-container .item-cat-titulo {
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -1757,6 +1759,11 @@ a {
     height: 100%;
     width: 100%;
     color: white;
+  }
+
+  .space-intercat {
+    width: 100vw;
+    height: 70px;
   }
 }
 /* +++++++++++++++++++++++++++++++++++++++++   RESPONSIVE:  761-1023px ++++++++++++++++++++++++++++++ */
@@ -1782,6 +1789,7 @@ a {
     height: 100vh;
     width: 100vw;
     display: grid;
+    padding-top: 80px;
     align-items: center;
     justify-items: center;
     gap: 20px;
@@ -1790,8 +1798,8 @@ a {
     grid-template-areas: "cat-MTB cat-repuestos" "cat-accesorios cat-indumentaria";
   }
   .categorias-container .item-cat {
-    height: 400px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     box-shadow: 5px 0px 10px #9b9b9b;
     justify-content: center;
     align-items: center;

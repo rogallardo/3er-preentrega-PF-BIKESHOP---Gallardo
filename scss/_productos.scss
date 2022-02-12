@@ -122,7 +122,7 @@
     grid-template-areas: 'cat-MTB cat-repuestos cat-accesorios cat-indumentaria';
 
     .item-cat {
-        height: 400px;
+        height: 450px;
         width: 300px;
         box-shadow: 5px 0px 10px rgb(155, 155, 155);
         justify-content: center;
@@ -130,6 +130,7 @@
         display: flex;
         transition: 0.2s;
         backdrop-filter: brightness(40%);
+        background-size: cover;
 
         .bright {
             backdrop-filter: brightness(40%);
@@ -260,7 +261,7 @@
     }
 
 }
-
+// ************************************************************MTB***********************************************************************//
 .item-MTB-prod1 {
     grid-area: item-prod1;
 
@@ -357,7 +358,7 @@
     }
 }
 
-// ***********************************************REPUESTOS********************************************//
+// ***************************************************************REPUESTOS************************************************************//
 .item-repuestos-prod1 {
     grid-area: item-prod1;
 
@@ -454,7 +455,7 @@
     }
 }
 
-// ***********************************************ACCESORIOS********************************************//
+// ***************************************************************ACCESORIOS*******************************************************//
 .item-accesorios-prod1 {
     grid-area: item-prod1;
 
@@ -551,7 +552,7 @@
     }
 }
 
-// ***********************************************INDUMENTARIA********************************************//
+// **************************************************************INDUMENTARIA********************************************************//
 .item-indumentaria-prod1 {
     grid-area: item-prod1;
 
@@ -688,6 +689,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
+        padding: 8%;
         padding: 10%;
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
@@ -697,8 +699,8 @@
             'cat-accesorios cat-indumentaria';
 
         .item-cat {
-            height: 300px;
-            width: 180px;
+            height: 100%;
+            width: 100%;
             box-shadow: 5px 0px 10px rgb(155, 155, 155);
             justify-content: center;
             align-items: center;
@@ -712,7 +714,7 @@
             }
         }
         .item-cat-titulo {
-            font-size: 24px;
+            font-size: 22px;
             text-decoration: none;
             display: flex;
             justify-content: center;
@@ -723,6 +725,11 @@
             color: white;
         }
 
+    }
+    .space-intercat {
+        width: 100vw;
+        height: 70px;
+    
     }
 }
 
@@ -758,6 +765,7 @@
         height: 100vh;
         width: 100vw;
         display: grid;
+        padding-top: 80px;
         align-items: center;
         justify-items: center;
         gap: 20px;
@@ -768,8 +776,8 @@
             'cat-accesorios cat-indumentaria';
 
         .item-cat {
-            height: 400px;
-            width: 300px;
+            height: 100%;
+            width: 100%;
             box-shadow: 5px 0px 10px rgb(155, 155, 155);
             justify-content: center;
             align-items: center;
