@@ -684,13 +684,14 @@
     }
 
     .categorias-container {
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         max-width: 100vw;
         display: grid;
         justify-content: center;
         align-items: center;
-        padding: 10%;
+        padding: 3%;
+        margin-top: 30px;
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
