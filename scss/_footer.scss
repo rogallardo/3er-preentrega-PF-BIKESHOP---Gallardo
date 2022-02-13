@@ -2,10 +2,12 @@
 
 @mixin footerp ($flexdirec, $justifyc) {
 
-    background: rgb(63, 63, 63);
+    background-image: url(../img/footerbg1.jpeg);
+    background-size: cover;
+    height: 300px;
     font-size: 12px;
     grid-area: footer;
-    padding: 15px;
+    padding: 2%;
     text-align: center;
     color: rgb(255, 255, 255);
     display: flex;
@@ -53,27 +55,30 @@
     }
 
     .sitemap-container {
-        @include footerp(column, space-between);
         height: fit-content;
-        max-width: 90%;
+        width: 100%;
+        align-items: center;
         margin: auto;
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: inherit;
 
-        .secciones-container {
-            height: fit-content;
-            max-width: 90%;
-            height: 20px;
-            text-decoration: none;
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            border-top: solid 1px grey;
-            border-bottom: solid 1px grey;
-            background: rgb(63, 63, 63);
 
             a {
                 color: white;
+                width: 100%;
+                text-decoration: none;
             }
+    }
+
+    .footer-text2{
+        width: 100%;
+
+        .footer-text2-titulo{
+            font-size: 18px;
 
         }
+       
     }
 }

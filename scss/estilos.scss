@@ -8,7 +8,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 20;
 	overflow-x: hidden;
-	
+
 
 }
 
@@ -16,7 +16,7 @@ img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	
+
 }
 
 a {
@@ -119,13 +119,13 @@ a {
 	width: 100%;
 	overflow: hidden;
 
-	.bg-img{
+	.bg-img {
 		width: 100%;
 		height: 100vh;
-		position:absolute;
+		position: absolute;
 		background-image: url(../img/bicidestacada2.jpg);
 		background-size: cover;
-		
+
 
 	}
 
@@ -450,120 +450,120 @@ $paleta_sidebar: ('color1': black,
 	}
 
 	/* ---------- Articulo Destacado ----------*/
-.destacado {
-	grid-area: destacado;
-	background-image: url(../img/bicidestacada2.jpg);
-	background-size: cover;
-	background-position-y: 20%;
-	background-position-x: 80%;
-	display: flex;
-	justify-content: center;
-	height: 100vh;
-	width:100%;
-
-	div {
-		width: 100%;
-		height: 100vh;
+	.destacado {
+		grid-area: destacado;
+		background-image: url(../img/bicidestacada2.jpg);
+		background-size: cover;
+		background-position-y: 20%;
+		background-position-x: 80%;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		animation-name: brightness;
-		animation-duration: 2s;
-		animation-fill-mode: forwards;
+		height: 100vh;
+		width: 100%;
 
-		@keyframes brightness {
-			from {
-				backdrop-filter: brightness(90%);
-
-			}
-
-			to {
-				backdrop-filter: brightness(40%);
-
-			}
-		}
-
-
-		h2 {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			width: 300px;
-			height: fit-content;
-			font-weight: 600;
-			justify-content: center;
-			text-align: center;
-			font-size: 42px;
-			animation-name: showdelay;
-			animation-duration: 4s;
-			animation-fill-mode: forwards;
+		div {
+			width: 100%;
+			height: 100vh;
 			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			animation-name: brightness;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
 
-			@keyframes showdelay {
-				0% {
-					color: transparent;
-					border-color: transparent;
+			@keyframes brightness {
+				from {
+					backdrop-filter: brightness(90%);
+
 				}
 
-				10% {
-					color: transparent;
-					border-color: transparent;
-				}
+				to {
+					backdrop-filter: brightness(40%);
 
-				20% {
-					color: transparent;
-					border-color: transparent;
-				}
-
-				30% {
-					color: transparent;
-					border-color: transparent;
-				}
-
-				40% {
-					color: transparent;
-					border-color: transparent;
-				}
-
-				50% {
-					color: transparent;
-					border-color: transparent;
-				}
-
-				100% {
-					color: rgb(255, 255, 255);
 				}
 			}
-		}
 
-		h3 {
-			@extend h2;
-			padding-bottom: 30px;
-			width: fit-content;
-			font-size: 18px;
-			font-weight: 600;
 
-		}
+			h2 {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				width: 300px;
+				height: fit-content;
+				font-weight: 600;
+				justify-content: center;
+				text-align: center;
+				font-size: 42px;
+				animation-name: showdelay;
+				animation-duration: 4s;
+				animation-fill-mode: forwards;
+				display: flex;
 
-		a {
-			@extend h2;
-			padding: 10px;
-			width: fit-content;
-			font-size: 18px;
-			font-weight: 10;
-			border: solid 1px white;
-			text-decoration: none;
+				@keyframes showdelay {
+					0% {
+						color: transparent;
+						border-color: transparent;
+					}
 
-			&:hover {
-				background-color: white;
-				color: black !important;
+					10% {
+						color: transparent;
+						border-color: transparent;
+					}
+
+					20% {
+						color: transparent;
+						border-color: transparent;
+					}
+
+					30% {
+						color: transparent;
+						border-color: transparent;
+					}
+
+					40% {
+						color: transparent;
+						border-color: transparent;
+					}
+
+					50% {
+						color: transparent;
+						border-color: transparent;
+					}
+
+					100% {
+						color: rgb(255, 255, 255);
+					}
+				}
+			}
+
+			h3 {
+				@extend h2;
+				padding-bottom: 30px;
+				width: fit-content;
+				font-size: 18px;
+				font-weight: 600;
+
+			}
+
+			a {
+				@extend h2;
+				padding: 10px;
+				width: fit-content;
+				font-size: 18px;
+				font-weight: 10;
+				border: solid 1px white;
+				text-decoration: none;
+
+				&:hover {
+					background-color: white;
+					color: black !important;
+				}
+
 			}
 
 		}
 
 	}
-
-}
 
 	/* ---------- Articulos ----------*/
 	.contenido {
@@ -571,6 +571,7 @@ $paleta_sidebar: ('color1': black,
 		display: grid;
 		grid-gap: 20px;
 		width: 100%;
+
 		.articulo {
 			display: flex;
 			background: #fff;
@@ -585,7 +586,8 @@ $paleta_sidebar: ('color1': black,
 				justify-content: space-between;
 				width: 100%;
 				max-height: 600px;
-				p{
+
+				p {
 					font-size: 14px;
 				}
 
@@ -657,6 +659,7 @@ $paleta_sidebar: ('color1': black,
 	}
 
 }
+
 @import 'nosotros';
 @import 'contacto';
 @import 'galeria';
